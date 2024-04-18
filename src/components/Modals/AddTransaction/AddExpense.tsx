@@ -19,7 +19,7 @@ const AddTransactionExpense = ({ close }: { close: Function }) => {
     e.preventDefault();
     setLoading(true);
     axios
-      .post("http://localhost:3455/api/transaction/expense/create", {
+      .post("https://financeapp-3dlh.onrender.com/api/transaction/expense/create", {
         category: category,
         date: date,
         amount: amount,

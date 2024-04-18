@@ -17,7 +17,7 @@ const ReportPage = () => {
   const fetchReportData = async () => {
     setLoading(true);
     try {
-      const response = await axios.get('http://localhost:3455/api/report');
+      const response = await axios.get('https://financeapp-3dlh.onrender.com/api/report');
       console.log('Expenses', response);
       setData(response.data);
     } catch (error) {
@@ -30,7 +30,7 @@ const ReportPage = () => {
   const fetchExpenses = async () => {
     setLoading(true);
     try {
-      const response = await axios.get('http://localhost:3455/api/transaction/expenses/category/top');
+      const response = await axios.get('https://financeapp-3dlh.onrender.com/api/transaction/expenses/category/top');
       console.log('Expenses', response);
       setExpenses(response.data);
     } catch (error) {

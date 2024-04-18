@@ -23,7 +23,7 @@ const AddBudget = ({ close }: { close: Function }) => {
     };
 
     axios
-      .post("http://localhost:3455/api/budget/create", formData)
+      .post("https://financeapp-3dlh.onrender.com/api/budget/create", formData)
       .then(() => {
         notifications.show({
           title: "Create budget",

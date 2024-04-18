@@ -16,7 +16,7 @@ const DonationsPage = () => {
   const [loading, setLoading] = useState(false);
   const fetchDonations = async () => {
     setLoading(true);
-    const response = await axios.get("http://localhost:3455/api/transaction/expenses/all");
+    const response = await axios.get("https://financeapp-3dlh.onrender.com/api/transaction/expenses/all");
     console.log("Expenses", response);
     setDonors(response.data.reverse());
     setLoading(false);

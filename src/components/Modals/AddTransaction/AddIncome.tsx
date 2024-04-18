@@ -15,7 +15,7 @@ const AddTransactionIncome = ({ close }: { close: Function }) => {
     e.preventDefault();
     setLoading(true);
     axios
-      .post("http://localhost:3455/api/transaction/income/create", {
+      .post("https://financeapp-3dlh.onrender.com/api/transaction/income/create", {
         time: time,
         amount: amount,
       })
