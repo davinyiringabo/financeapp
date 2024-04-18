@@ -12,11 +12,6 @@ const AddBudget = ({ close }: { close: Function }) => {
   const [loading, setLoading] = useState(false);
   const [weekly, setWeekly] = useState(0);
   const [monthly, setMonthly] = useState(0);
-  const [formData] = useState({
-    id: uuidv4(),
-    week: "",
-    lastName: "",
-  });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
